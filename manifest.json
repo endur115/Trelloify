@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Trelloify",
+  "description": "This extension creates a trello card whose title that of the current tab with a shortened url of the page in the description.",
+  "version": "1.0",
+
+  "permissions": [
+	"cookies",
+	"tabs",
+	"storage",
+	"https://trello.com/1/authorize",
+	"https://trello.com/"
+  ],
+  "web_accessible_resources": ["token.html"],
+
+  "browser_action": {
+	"default_icon": "img/trelloify128_128.png",
+	"default_popup": "trelloify.html"
+  }
+}

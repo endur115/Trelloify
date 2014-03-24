@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Trelloify</title>
+    <link rel="stylesheet" href="css/trelloify.css"/>
+
+      <!--
+          - JavaScript and HTML must be in separate files: see our Content Security
+          - Policy documentation[1] for details and explanation.
+          -
+          - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+          -->
+    <script src="js/jquery.js"></script>
+    <script src="js/client.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/backbone.js"></script>
+    <script src="js/trelloify.js"></script>
+  </head>
+    <body>
+        <div class="container">
+            <div class="loggedOut">
+                <a href="#" class="logInButton">Click here to log into Trello</a>
+            </div>
+      
+            <div class="loggedIn">
+                <div class="block-top">
+                    <div class="block-left">
+                        <label for="boards">Boards</label>
+                        <select class="boards" id="boards">
+                            <option value="0">-- Please Select a Board --</option>
+                        </select>
+                    </div>
+                
+                    <div class="block-right">
+                        <label for="lists">List</label>
+                        <select class="lists" id="lists">
+                            <option value="0">-- Please Select a List -- </option>
+                        </select>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <hr/>
+                <div class="block-top">
+                    <a href="#" class="trelloifyButton">Trelloify the current tab.</a>
+                </div>
+            </div>
+
+            <div class="success">
+                <h2 class="success-text">Card created successfuly!</h2>
+            </div>
+        </div>
+    </body>
+</html>
+
